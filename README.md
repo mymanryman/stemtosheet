@@ -50,7 +50,9 @@ Dorico, Sibelius or Finale and print from there.
 
 * **Windows:** install Python 3.12 from <https://www.python.org/downloads/>
   and tick **"Add python.exe to PATH"** in the first installer screen.
-* **Mac:** install from python.org, or `brew install python@3.12`.
+* **Mac:** macOS comes with Python 3.9, which is too old. Install 3.12 from
+  <https://www.python.org/downloads/macos/> (or `brew install python@3.12`)
+  and use `python3.12` in step 3. The old one can stay installed.
 
 ### 3. Install StemToSheet
 
@@ -63,7 +65,7 @@ py -m venv .venv
 pip install -e .
 
 # Mac / Linux
-python3 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
 pip install -e .
 ```
